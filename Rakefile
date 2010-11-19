@@ -26,7 +26,7 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "ckeditor"
+    gemspec.name = "artemk-ckeditor"
     gemspec.version = Ckeditor::Version.dup
     gemspec.summary = "Rails plugin for integration ckeditor 3.x"
     gemspec.description = "CKEditor is a WYSIWYG editor to be used inside web pages"
@@ -34,7 +34,7 @@ begin
     gemspec.homepage = "http://github.com/galetahub/rails-ckeditor"
     gemspec.authors = ["Igor Galeta"]
     gemspec.files = FileList["[A-Z]*", "{app,config,lib,generators,examples}/**/*"]
-    gemspec.rubyforge_project = "ckeditor"
+    gemspec.rubyforge_project = "artemk-ckeditor"
     
     gemspec.add_dependency('mime-types', '>= 1.16')
   end
