@@ -33,7 +33,7 @@ begin
     gemspec.email = "galeta.igor@gmail.com"
     gemspec.homepage = "http://github.com/galetahub/rails-ckeditor"
     gemspec.authors = ["Igor Galeta"]
-    gemspec.files = FileList["[A-Z]*", "{app,config,lib,generators,examples}/**/*"]
+    gemspec.files = FileList["[A-Z]*", "{app,config,lib,generators,examples,rails}/**/*"]
     gemspec.rubyforge_project = "artemk-ckeditor"
     
     gemspec.add_dependency('mime-types', '>= 1.16')
