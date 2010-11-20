@@ -5,8 +5,9 @@ class CkeditorController < ApplicationController
   
   # GET /ckeditor/images
   def images
-    @images = Ckeditor.image_model.find(:all, :order=>"id DESC")
-    
+    user_id = current_user.id if (respond_to?(:current_user) && current_user)
+    @images = Ckeditor.image_model.find(:all, :order=>"id DESC", :conditions => {:user_id => user_id})
+        
     respond_to do |format|
       format.html {}
       format.xml { render :xml=>@images }
